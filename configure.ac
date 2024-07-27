@@ -9,7 +9,9 @@ AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_PROG_CC
 
 # Checks for libraries.
-
+AC_CHECK_LIB([check], [suite_create])
+AC_CHECK_LIB([m], [floor])
+AC_CHECK_LIB([subunit], [subunit_test_start])
 # Checks for header files.
 
 # Checks for typedefs, structures, and compiler characteristics.
